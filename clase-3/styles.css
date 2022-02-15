@@ -1,0 +1,67 @@
+.list-content {
+  display: inline-block;
+}
+
+ul {
+  margin: 2rem 6.5rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  margin: 1em 0;
+  padding-left: 2.5rem;
+  background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
+  line-height: 1.6rem;
+}
+
+ul li.arrow-next-black {
+  background-image: url(./images/arrow-next-black.png);
+  color: black;
+}
+ul li.arrow-right-blue {
+  background-image: url(./images/arrow-next-blue.png);
+  color: #275898;
+}
+ul li.arrow-right-green {
+  background-image: url(./images/arrow-next-green.png);
+  color: #2aaa85;
+}
+ul li.arrow-right-grey {
+  background-image: url(./images/arrow-next-grey.png);
+  color: #838b91;
+}
+ul li.arrow-right-orange {
+  background-image: url(./images/arrow-next-orange.png);
+  color: #ff670c;
+}
+ul li.arrow-right-pink {
+  background-image: url(./images/arrow-next-pink.png);
+  color: #ffbaa1;
+}
+ul li.check-green {
+  background-image: url(./images/check-green.png);
+  color: #2fba82;
+}
+ul li.wrong-orange {
+  background-image: url(./images/wrong-orange.png);
+  color: #f06a55;
+}
+ul li.star-yellow {
+  background-image: url(./images/star-yellow.png);
+  color: #ffc107;
+}
+ul li.stop-orange {
+  background-image: url(./images/stop-orange.png);
+  color: #ffa394;
+}
+ul li.telegram-blue {
+  background-image: url(./images/telegram-blue.png);
+  color: #114784;
+}
+ul li.cloud-download-green {
+  background-image: url(./images/cloud-download-green.png);
+  color: #23ae73;
+}
