@@ -1,0 +1,38 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.container {
+  background-color: bisque;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+table {
+  background-color: #20273a;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+}
+
+table thead {
+  color: #6a92bd;
+  text-align: left;
+}
+table thead tr th,
+tbody tr td {
+  padding: 1rem;
+}
+
+table tbody tr {
+  color: #9da4bd;
+}
+table tbody tr:nth-child(even) {
+  background: #313c4e;
+}
+table tbody tr:nth-child(odd) {
+  background: #2d3447;
+}
+
+table tbody tr td.first_column {
+  color: #f86d94;
+}
