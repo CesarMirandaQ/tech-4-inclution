@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Clase 5 - Video y Formularios</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="player">
+      <video id="video" poster="./images/poster.jpg" muted>
+        <source src="./resources/video.mp4" type="video/mp4">
+      </video>
+      <div class="player-overlay">
+        <h2 class="player-title">Video de Prueba</h2>
+        <div class="player-actions">
+          <button class="button" id="backward" title="Retroceder 10 segundos"></button>
+          <button class="button" id="play" title="Reproducir video"></button>
+          <button class="button" id="pause" title="Pausar video" hidden></button>
+          <button class="button" id="forward" title="Adelantar 10 segundos"></button>
+        </div>
+        <div class="player-progress">
+          <input type="range" id="progress" min="0" value="0" step="1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="wrapper">
+    <h2>Formulario</h2>
+    <form>
+      <label>Nombre: <input type="text" pattern="[a-z A-Z]{4,}" placeholder="No puedes llamarte T-1000" required>
+      </label>
+      <label>Edad: <input type="text" pattern="[0-9]{2}" placeholder="Alejarse mayores de 100" required> </label>
+      <label>Pais:
+        <select name="pais" required>
+          <option value="argentina">Argentina</option>
+          <option value="chile">Chile</option>
+          <option value="colombia">Colombia</option>
+          <option value="cuba">Cuba</option>
+          <option value="mexico">Mexico</option>
+          <option value="peru">Perú</option>
+          <option value="uruguay">Uruguay</option>
+          <option value="venezuela">Venezuela</option>
+        </select>
+      </label>
+      <fieldset>
+        <legend>Elige tu preferencia:</legend>
+        <label> <input type="radio" name="sexo" value="mujer" required> Mujer </label>
+        <label> <input type="radio" name="sexo" value="varon" required> Varon </label>
+        <label> <input type="radio" name="sexo" value="desconocido" required> Prefiero no decirlo </label>
+      </fieldset>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

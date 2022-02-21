@@ -1,0 +1,85 @@
+.wrapper {
+  max-inline-size: 900px;
+  margin: auto;
+}
+
+.player {
+  margin-block-start: 50px;
+  position: relative;
+}
+
+.player video {
+  aspect-ratio: 16/9;
+  inline-size: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.player-title {
+  color: white;
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 20px;
+}
+
+.player-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  inset: 0;
+}
+
+.player-progress {
+  display: flex;
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline: 0;
+  padding: 0.5rem;
+}
+
+.player-progress input {
+  flex: 1;
+}
+
+.player-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.5s opacity;
+}
+
+.player:hover .player-overlay {
+  opacity: 1;
+}
+
+.button {
+  border: none;
+  block-size: 32px;
+  inline-size: 32px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(0.8);
+}
+
+#play {
+  background-image: url("./images/play.svg");
+}
+
+#pause {
+  background-image: url("./images/pause.svg");
+}
+
+#backward {
+  background-image: url("./images/-10.svg");
+}
+
+#forward {
+  background-image: url("./images/+10.svg");
+}
