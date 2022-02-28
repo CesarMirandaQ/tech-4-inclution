@@ -1,0 +1,88 @@
+.container {
+  width: 100px;
+  height: 100px;
+  border: 10px solid black;
+  border-radius: 100%;
+  border-style: solid dashed none;
+  margin: 10px 20px 30px;
+  padding: 50px;
+  box-sizing: content-box;
+}
+
+.card-container {
+  background: #0a0c1b;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background: #1c1938;
+  box-sizing: border-box;
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 5rem 0;
+  transition: all 0.5s ease-in-out;
+}
+.card-content,
+.card-image {
+  box-sizing: inherit;
+  color: white;
+  height: 250px;
+  width: 300px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem;
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0;
+}
+.card-title span {
+  color: #a061ca;
+}
+.card-text,
+.stats p {
+  color: #a2a0b8;
+  font-size: 0.7rem;
+}
+.card-text {
+  margin-bottom: 30px;
+}
+.card-stats {
+  display: flex;
+  justify-content: space-between;
+}
+.card-stats * {
+  padding: 0;
+  margin: 0;
+}
+.stats p {
+  text-transform: uppercase;
+}
+.card-image {
+  position: relative;
+}
+.card-image img {
+  filter: hue-rotate(240deg);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.image-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #a256cf;
+  opacity: 80%;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column-reverse;
+  }
+}
